@@ -30,10 +30,8 @@
       <v-container class="main-container">
         <!-- title -->
         <v-row align="center" justify="center">
-          <v-col cols="3" offset="3">
+          <v-col cols="8" class="d-flex justify-space-between">
             <h1>Personas</h1>
-          </v-col>
-          <v-col cols="3" class="d-flex justify-end">
             <v-dialog v-model="dialog" max-width="500px">
               <template v-slot:activator="{ on, attrs }">
                 <v-btn color="secondary" v-bind="attrs" v-on="on">
@@ -160,11 +158,10 @@
               </v-card>
             </v-dialog>
           </v-col>
-          <v-col cols="3"></v-col>
         </v-row>
         <!-- content -->
         <v-row justify="center">
-          <v-col cols="6">
+          <v-col cols="8">
             <v-data-table
               :loading="!getPeople"
               :headers="headers"
